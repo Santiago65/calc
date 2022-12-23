@@ -1,0 +1,154 @@
+:root {
+ 
+
+  --hue: 143;
+  --sat: 76%;
+  --lig: 40%;
+
+  --first-color-dark: hsl(var(--hue), 100%, var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
+  --body-color: hsl(var(--hue), 100%, 0%);
+  --container-color: hsl(var(--hue), 100%, 40%);
+  --first-color-dark: hsl(var(--hue), 100%, var(--lig));
+
+  /* fuentes del archivo */
+  --body-font: 'Poppins', sans-serif;
+  ;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  
+  @media screen and (min-width: 968px) {
+    :root {
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+}
+
+/* Selectores */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 17px;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .3s;
+  /* For animation dark mode*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.calculator{
+  width: 21.25rem;
+  max-width: 968px;
+  /* margin: 4rem 5rem 2rem 2rem; */
+  border-radius: .5rem;
+  background: rgba(31, 41, 32, 0.986);
+  display:block;
+  justify-content: center;
+}
+
+
+.row {
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  background-image: url("https://us.123rf.com/450wm/peshkov/peshkov1906/peshkov190601173/126044661-fondo-de-pantalla-abstracto-brillante-f%C3%B3rmulas-matem%C3%A1ticas-con-ecuaciones-matem%C3%A1ticas-algoritmo-y-co.jpg?ver=6");
+  
+}
+h1{
+  color: aliceblue;
+  padding: 1rem;
+}
+
+.calculadora{
+  background-color: rgb(141, 29, 247);
+  padding: 25px;
+  border-radius: 3%;
+}
+
+.teclado{
+  background-color: rgb(141, 29, 247);
+}
+
+.teclas{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  margin-left: 0px ;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.boton{
+  background-color: rgb(48, 9, 94);
+  text-align: center;
+  color: white;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  margin: 2px;
+  display: block;
+}
+
+.boton-igual{
+  background-color: rgb(71, 71, 230);
+  text-align: center;
+  color: white;
+  display: block;
+  width: 45px;
+  height: 92px;
+  padding: 5px;
+  margin: 2px;
+  
+}
+
+
+.resultado{
+  background-color: rgb(179, 179, 206);
+  border: 1px;
+  border-style: solid;
+  height: 65px;
+ 
+}
+
+.led{
+
+  text-align: right;
+  font-size: xx-large;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Inconsolata', monospace;
+}
+
+
