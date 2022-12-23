@@ -42,7 +42,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 17px;
+  
 }
 
 body {
@@ -66,6 +66,7 @@ h3 {
 
 .calculator{
   width: 21.25rem;
+ 
   max-width: 968px;
   /* margin: 4rem 5rem 2rem 2rem; */
   border-radius: .5rem;
@@ -151,4 +152,23 @@ h1{
   font-family: 'Inconsolata', monospace;
 }
 
+.redes{
+ 
+  font-size: 35px;
+  display: block;
+  padding:0px;
+  width: 100%;
+  text-align: center;
+  
+}
+i {
+  color: rgb(240, 7, 77);
+  padding: 4px;
+}
+h3{
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+
+}
 

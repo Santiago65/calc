@@ -1,6 +1,6 @@
 import './App.css';
-import Button from './components/Button.js';
-import Display from './components/Display';
+import Button from './componentes/Boton.js';
+import Display from './componentes/Display';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
 
@@ -269,9 +269,12 @@ function App() {
           >{'+'}</Button>
           <Button class='operator' clickFunc={() => { setInput('') }}>{'C'}</Button>
           <Button class='equal' clickFunc={calculate}>{'='}</Button>
+        
         </div>
       </div>
     </div>
+
+    
   );
 }
 
