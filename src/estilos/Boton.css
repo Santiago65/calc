@@ -1,4 +1,4 @@
-.button {
+.Boton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,10 +13,9 @@
   user-select: none;
   flex: 1 1;
   font-size: 12px;
-  /* min-width: 40px; */
-  /* box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25); */
+  
 }
-.button:hover {
+.Boton:hover {
   background-color: hsl(var(--hue), 8%, 50%);
 }
 .operator{

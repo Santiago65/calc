@@ -1,5 +1,5 @@
 import './App.css';
-import Button from './componentes/Boton.js';
+import Boton from './componentes/Boton.js';
 import Display from './componentes/Display';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
@@ -100,175 +100,175 @@ function App() {
           input={input}
         />
         <div className='row'>
-          <Button
+          <Boton
             class='operator'
             clickFunc={updateInput}
-            symbolButton = '('
+            symbolBoton = '('
           >{'('}
-          </Button>
-          <Button 
+          </Boton>
+          <Boton 
             class='operator'
             clickFunc={updateInput}
-            symbolButton = ')'
+            symbolBoton = ')'
           >{')'}
-          </Button>
-          <Button 
+          </Boton>
+          <Boton 
             class='operator'
             clickFunc={updateInput}
-            symbolButton = '!'
+            symbolBoton = '!'
           >{'x!'}
-          </Button>
-          <Button
+          </Boton>
+          <Boton
             class='operator'
             clickFunc={updateInput}
-            symbolButton = '^2'
-          >{'x²'}</Button>
-          <Button 
+            symbolBoton = '^2'
+          >{'x²'}</Boton>
+          <Boton 
             class='operator'
             operation = 'squareRoot'
             clickFunc={funcMath}
-          >{'√'}</Button>
-          <Button 
+          >{'√'}</Boton>
+          <Boton 
             class='operator'
             operation = 'nthRoot' 
             clickFunc={funcMath}
-          >{'ⁿ√'}</Button>
+          >{'ⁿ√'}</Boton>
         </div>
         <div className='row'>
-          <Button 
+          <Boton 
             class='operator' 
             clickFunc={funcMath}
             operation = 'sin'
-          >{'sin'}</Button>
-          <Button 
+          >{'sin'}</Boton>
+          <Boton 
             class='operator'
             clickFunc={funcMath}
             operation = 'cos'
-          >{'cos'}</Button>
-          <Button 
+          >{'cos'}</Boton>
+          <Boton 
             class='operator'
             clickFunc={funcMath}
             operation = 'tg'
-          >{'tg'}</Button>
-          <Button 
+          >{'tg'}</Boton>
+          <Boton 
             class='operator' 
             clickFunc={funcMath}
             operation = 'cube'
-          >{'x³'}</Button>
-          <Button 
+          >{'x³'}</Boton>
+          <Boton 
             class='operator'
             clickFunc={funcMath}
             operation = 'cubeRoot' 
-          >{'∛'}</Button>
-          <Button
+          >{'∛'}</Boton>
+          <Boton
             class='operator'
             clickFunc={funcMath}
             operation = 'nthPower' 
-          >{'xⁿ'}</Button>
+          >{'xⁿ'}</Boton>
         </div>
         <div className='row'>
-          <Button 
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '1'
-          >1</Button>
-          <Button 
+            symbolBoton = '1'
+          >1</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '2'
-          >2</Button>
-          <Button 
+            symbolBoton = '2'
+          >2</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '3'
-          >3</Button>
-          <Button
+            symbolBoton = '3'
+          >3</Boton>
+          <Boton
             class='operator'
             clickFunc={updateInput}
-            symbolButton = '/'
-          >{'÷'}</Button>
-          <Button 
+            symbolBoton = '/'
+          >{'÷'}</Boton>
+          <Boton 
             class='operator'
             clickFunc={updateInput}
-            symbolButton = '%'
-          >{'%'}</Button>
-          <Button
+            symbolBoton = '%'
+          >{'%'}</Boton>
+          <Boton
             class='operator' 
             clickFunc={funcMath}
             operation = 'ln' 
-          >{'ln'}</Button>
+          >{'ln'}</Boton>
         </div>
         <div className='row'>
-          <Button 
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '4'
-          >4</Button>
-          <Button 
+            symbolBoton = '4'
+          >4</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '5'
-          >5</Button>
-          <Button 
+            symbolBoton = '5'
+          >5</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '6'
-          >6</Button>
-          <Button 
+            symbolBoton = '6'
+          >6</Boton>
+          <Boton 
             class='operator' 
             clickFunc={updateInput}
-            symbolButton = '*'
-          >{'×'}</Button>
-          <Button 
+            symbolBoton = '*'
+          >{'×'}</Boton>
+          <Boton 
             class='operator' 
             clickFunc={funcMath}
             operation = 'log' 
-          >{'log'}</Button>
-          <Button 
+          >{'log'}</Boton>
+          <Boton 
             class='operator' 
             clickFunc={funcMath}
             operation = 'e' 
-            >{'e'}</Button>
+            >{'e'}</Boton>
         </div>
         <div className='row'>
-          <Button 
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '7'  
-          >7</Button>
-          <Button 
+            symbolBoton = '7'  
+          >7</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '8'
-          >8</Button>
-          <Button 
+            symbolBoton = '8'
+          >8</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '9'
-          >9</Button>
-          <Button 
+            symbolBoton = '9'
+          >9</Boton>
+          <Boton 
             class='operator'
             clickFunc={updateInput}
-            symbolButton = '-'
-          >{'-'}</Button>
-          <Button 
+            symbolBoton = '-'
+          >{'-'}</Boton>
+          <Boton 
             class='operator'
             clickFunc={updateInput}
-            symbolButton = {memory}
-          >{'MR'}</Button>
-          <Button class='operator' clickFunc={memoryStorage}>{'MS'}</Button>
+            symbolBoton = {memory}
+          >{'MR'}</Boton>
+          <Boton class='operator' clickFunc={memoryStorage}>{'MS'}</Boton>
         </div>
         <div className='row'>
-          <Button 
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '.'
-          >.</Button>
-          <Button 
+            symbolBoton = '.'
+          >.</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = '0'  
-          >0</Button>
-          <Button 
+            symbolBoton = '0'  
+          >0</Boton>
+          <Boton 
             clickFunc={updateInput}
-            symbolButton = {PI.toFixed(4)}  
-          >π</Button>
-          <Button
+            symbolBoton = {PI.toFixed(4)}  
+          >π</Boton>
+          <Boton
             class='operator'
             clickFunc={updateInput}
-            symbolButton = '+'
-          >{'+'}</Button>
-          <Button class='operator' clickFunc={() => { setInput('') }}>{'C'}</Button>
-          <Button class='equal' clickFunc={calculate}>{'='}</Button>
+            symbolBoton = '+'
+          >{'+'}</Boton>
+          <Boton class='operator' clickFunc={() => { setInput('') }}>{'C'}</Boton>
+          <Boton class='equal' clickFunc={calculate}>{'='}</Boton>
         
         </div>
       </div>
